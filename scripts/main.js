@@ -3,7 +3,7 @@
 
   $(document).ready(function(){
     $.ajax({
-      url: "https://api.github.com/user",
+      url: "https://api.github.com/users/salgib",
       headers: {
         "Authorization": "token " + GITHUB_TOKEN
       }
@@ -19,6 +19,7 @@
     }).then(function(user) {
       console.log(user);
     });
+
 
   });
 
