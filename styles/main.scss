@@ -5,10 +5,10 @@
 $base-font-family: $helvetica;
 
 // Colors
-$blue: #477dca;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #ddd;
+$blue: RGBA(66, 132, 192, 1);
+$dark-gray: RGBA(111, 102, 102, 1);
+$medium-gray: RGBA(245, 245, 245, 1);
+$light-gray: RGBA(229, 229, 229, 1);
 $very-light-gray: #fafafa;
 
 $base-font-color: $dark-gray;
@@ -18,4 +18,195 @@ body {
   font-family: $base-font-family;
   background-color: $base-background-color;
   color: $base-font-color;
+}
+
+a {
+  text-decoration: none;
+  color: $blue;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+header {
+  background-color: $medium-gray;
+  border-bottom: 1px solid $light-gray;
+  padding: 0 222px;
+  position: relative;
+  height: 49px;
+}
+
+header span {
+  padding: 20px 10px;
+}
+
+header a {
+  vertical-align: middle;
+  color: black;
+  padding: 10px 5px;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+
+header a:hover {
+  color: $blue;
+}
+
+header input {
+  width: 358px;
+}
+
+.top-left-nav {
+  float: left;
+  height: 49px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.top-left-nav span {
+  padding: 10px;
+}
+
+.top-right-nav {
+  float: right;
+}
+
+
+.outer-container {
+  margin: 0 222px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.user-info {
+  width: 240px;
+  height: 500px;
+  float: left;
+}
+
+.user-info img {
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.avatar {
+  width: 230px;
+  height: 230px;
+}
+
+
+
+.user-info li {
+  list-style: none;
+  display: inline-block;
+
+}
+
+.primary-nav {
+  display: inline-block;
+  padding: 10px 0 0 10px;
+  border-bottom: 1px solid $light-gray;
+  position: relative;
+}
+
+.edit-profile {
+  float: right;
+  margin-left: 210px;
+  margin-bottom: 10px;
+  color: black;
+  font-size: 0.75em;
+  font-weight: bold;
+  background-color: RGBA(248, 248, 248, 1);
+  border-radius: 3px;
+
+}
+
+.tabs {
+  color: $dark-gray;
+  text-decoration: none;
+  border-bottom: 1px solid $light-gray;
+  padding: 8px 12px 17px;
+
+}
+
+.active-tab {
+  color: black;
+  padding-top: 8px;
+  padding-right: 12px;
+  padding-left: 12px;
+  border-top: 1px solid $light-gray;
+  border-right:  1px solid $light-gray;
+  border-left:  1px solid $light-gray;
+  border-radius: 2px;
+
+}
+
+.active-tab:hover,
+.tabs:hover {
+  text-decoration: none;
+}
+
+.secondary-nav {
+  padding: 20px;
+}
+
+.secondary-nav a {
+  padding: 0 2px;
+}
+
+.search {
+  height: 33px;
+  border-radius: 5px;
+  background-color: RGBA(248, 248, 248, 1);
+}
+
+.secondary-nav input {
+  width: 259px;
+  height: 33px;
+}
+
+
+
+.green-button {
+  color: white;
+  background-color: RGBA(132, 217, 120, 1);
+  border-radius: 5px;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-left: 6px;
+  width: 68px;
+  height: 34px;
+}
+
+.repo {
+  position: relative;
+  width: 730px;
+}
+
+.repositories {
+  float: left;
+  width: 730px;
+  clear: right;
+  margin-left: 5px;
+}
+
+.repo-name {
+  width: 540px;
+  margin-right: 0;
+
+}
+
+.repo-name a {
+  font-size: 1.5em;
+}
+
+.repo-details {
+  float: right;
+}
+
+.repo-details li {
+  list-style: none;
+  display: inline-block;
 }

@@ -1,19 +1,96 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title></title>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+  <title></title>
 
-    <link rel="stylesheet" href="dist/styles/main.css">
+  <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+  <link rel="stylesheet" href="/octicons/octicons.css">
+  <link rel="stylesheet" href="dist/styles/main.css">
 
-    <script src="bower_components/modernizr/modernizr.js"></script>
-  </head>
-  <body>
+  <script src="bower_components/modernizr/modernizr.js"></script>
+</head>
+
+<body>
+
+
+  <header>
+    <div class="top-left-nav">
+      <a href="https://github.com/"><span class="mega-octicon octicon-mark-github"></span></a>
+      <input type="text" placeholder="Search GitHub">
+      <a href="https://github.com/explore">Explore</a>
+      <a href="https://gist.github.com/">Gist</a>
+      <a href="https://github.com/blog">Blog</a>
+      <a href="https://help.github.com/">Help</a>
+    </div>
+    <div class="top-right-nav">
+      <a href="https://github.com/Salgib">Salgib</a>
+      <a href="https://github.com/new"><span class="octicon octicon-plus"></span></a>
+      <a href="https://github.com/notifications"><span class="octicon octicon-inbox"></span></a>
+      <a href="https://github.com/settings/profile"><span class="octicon octicon-gear"></span></a>
+      <a href="#"><span class="octicon octicon-sign-out"></span></a>
+    </div>
+  </header>
+
+  <div class="outer-container">
+
+    <div class="user-info">
+
+      <!-- Avatar picture
+      User name
+      User information
+      Follower, Stars, Following
+      Organizations -->
+    </div>
+
+    <section class="primary-nav">
+      <a href="https://github.com/Salgib" class="tabs">
+        <span class="octicon octicon-diff-added"></span>
+        Contributions</a>
+      <a href="https://github.com/Salgib?tab=repositories" class="active-tab">
+        <span class="octicon octicon-repo"></span>
+        Repositories</a>
+      <a href="https://github.com/Salgib?tab=activity" class="tabs">
+        <span class="octicon octicon-rss"></span>
+        Public Activity</a>
+      <a href="https://github.com/account">
+        <button class="edit-profile">
+          <span class="octicon octicon-pencil"></span>
+          Edit Profile</button>
+      </a>
+    </section>
+
+      <section class="secondary-nav">
+        <input type="text" placeholder="Find a repository...">
+        <button class="search">Search</button>
+        <a href="https://github.com/Salgib?tab=repositories#" class="active">All</a>
+        <a href="https://github.com/Salgib?tab=repositories#">Public</a>
+        <a href="https://github.com/Salgib?tab=repositories#">Private</a>
+        <a href="https://github.com/Salgib?tab=repositories#">Sources</a>
+        <a href="https://github.com/Salgib?tab=repositories#">Forks</a>
+        <a href="https://github.com/Salgib?tab=repositories#">Mirrors</a>
+        <a href="https://github.com/new">
+          <button class="green-button">
+            <span class="octicon octicon-repo"></span>
+            New</button>
+        </a>
+      </section>
+
+
+    <div class="repositories">
+
+      <!-- Dynamic list of Repositories goes Here -->
+    </div>
+
+
+
+
+
+  </div>
 
   <!-- Third Party Scripts -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -22,7 +99,9 @@
 
   <!-- Application Scripts -->
   <script src="dist/scripts/templates.js"></script>
+  <script src="scripts/token.js"></script>
   <script src="scripts/main.js"></script>
 
 </body>
+
 </html>
