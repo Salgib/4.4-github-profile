@@ -15,7 +15,7 @@
 
   $(document).ready(function(){
     $.ajax({
-      url: "https://api.github.com/user/repos",
+      url: "https://api.github.com/user/repos?sort=created",
       headers: {
         "Authorization": "token " + GITHUB_TOKEN
       }
