@@ -91,6 +91,19 @@ header input {
   margin-top: 10px;
 }
 
+.avatar {
+  width: 230px;
+  height: 230px;
+}
+
+
+
+.user-info li {
+  list-style: none;
+  display: inline-block;
+
+}
+
 .primary-nav {
   display: inline-block;
   padding: 10px 0 0 10px;
@@ -165,4 +178,35 @@ header input {
   margin-left: 6px;
   width: 68px;
   height: 34px;
+}
+
+.repo {
+  position: relative;
+  width: 730px;
+}
+
+.repositories {
+  float: left;
+  width: 730px;
+  clear: right;
+  margin-left: 5px;
+}
+
+.repo-name {
+  width: 540px;
+  margin-right: 0;
+
+}
+
+.repo-name a {
+  font-size: 1.5em;
+}
+
+.repo-details {
+  float: right;
+}
+
+.repo-details li {
+  list-style: none;
+  display: inline-block;
 }

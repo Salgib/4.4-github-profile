@@ -2,31 +2,39 @@
   'use strict';
 
   $(document).ready(function(){
+
+  $.ajax({
+    url: 'https://api.github.com/users/salgib',
+  }).then(function(data){
+    $('.user-info').prepend(JST['user-template'](data));
+    console.log(data);
+  })
+
+
+
+
+  $(document).ready(function(){
     $.ajax({
-      url: "https://api.github.com/users/salgib",
+      url: "https://api.github.com/user/repos",
       headers: {
         "Authorization": "token " + GITHUB_TOKEN
       }
-    }).then(function(user) {
-      console.log(user);
+    }).then(function(repo) {
+      displayRepos(repo);
     });
 
-    $.ajax({
-      url: "https://api.github.com/users/salgib/repos",
-      headers: {
-        "Authorization": "token " + GITHUB_TOKEN
-      }
-    }).then(function(user) {
-      console.log(user);
-    });
+      });
 
+    function displayRepos(repo){
+      console.log(repo);
+      $('.repositories').prepend(JST['repo-template'](repo));
 
-  });
+    }
 
 
 
-
-
+});
+})();
 
 
 
@@ -48,4 +56,3 @@
   // $('button').on('click', function(e){
   //   window.location.replace('https://github.com/login/oauth/authorize?client_id=30b3ed64b34eadf42a0a');
   // });
-})();
